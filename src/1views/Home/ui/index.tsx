@@ -1,4 +1,4 @@
-// src/views/Home/ui/index.tsx
+// src/1views/Home/ui/index.tsx
 
 import { Box, Typography } from "@mui/material";
 import React, { FC } from "react";
@@ -22,7 +22,7 @@ const stackImageStyle = {
 
 // Компонент для отображения аватара и названия
 const AvatarSection: FC = () => (
-  <Box padding={4} display="flex" alignItems="center" marginBlock={2} justifyContent="center" gap={2}>
+  <Box padding={4} display="flex" alignItems="center" marginBlock={2} justifyContent="center" bgcolor="#121212" gap={2} borderRadius={2}>
     <Box component="img" src="/avatar-main.png" alt="Avatar" title="Avatar" sx={avatarStyle} />
     <Box>
       <Typography variant="h3" component="h1" sx={titleShadowStyle}>
@@ -37,7 +37,7 @@ const AvatarSection: FC = () => (
 
 // Компонент для отображения биографии
 const BioSection: FC = () => (
-  <Box display="flex" alignItems="center" flexDirection="column" justifyContent="center" marginBlock={2} bgcolor="#f07a18" padding={4} borderRadius={2}>
+  <Box display="flex" alignItems="center" flexDirection="column" justifyContent="center" marginBlock={2}bgcolor="#121212" padding={4} borderRadius={2}>
     <Typography variant="h4" marginBottom={2} color="#fff">My Bio</Typography>
     <Typography textAlign="center" variant="h5" sx={{ ...titleShadowStyle, color: "#fff" }}>
       I'm a 17-year-old full-stack developer from Ukraine, actively contributing to open-source projects. I began learning programming in early 2024 and quickly adapt to new projects and technologies.
@@ -47,7 +47,7 @@ const BioSection: FC = () => (
 
 // Компонент для отображения стека технологий
 const StackSection: FC = () => (
-  <Box display="flex" alignItems="center" flexDirection="column" marginBlock={2} padding={4} borderRadius={2} bgcolor="#f5f5f5">
+  <Box display="flex" alignItems="center" flexDirection="column" marginBlock={2} padding={4} borderRadius={2} bgcolor="#121212">
     <Typography variant="h4" marginBottom={2}>My Stack</Typography>
     <Box display="flex" alignItems="center" justifyContent="space-around" width="100%" marginBottom={2}>
       <Typography variant="h5" sx={titleShadowStyle}>Frontend</Typography>
@@ -63,7 +63,7 @@ const StackSection: FC = () => (
 );
 
 const Home: FC = () => (
-  <Box padding={2}>
+  <Box padding={2} bgcolor="#f07a18">
     <AvatarSection />
     <BioSection />
     <StackSection />

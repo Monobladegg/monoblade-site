@@ -3,6 +3,7 @@
 import "./globals.scss";
 import { Metadata } from "next";
 import React, { FC } from "react";
+import { Layout } from "@/1views";
 
 export const metadata: Metadata = {
   title: "Monoblade",
@@ -17,14 +18,7 @@ interface RootLayoutProps {
 }
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
-  return (
-    <html lang="en">
-      <head></head>
-      <body>
-        <main>{children}</main>
-      </body>
-    </html>
-  );
+  return <Layout>{children}</Layout>;
 };
 
 export default RootLayout;
