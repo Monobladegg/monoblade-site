@@ -17,7 +17,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <head></head>
-      <body>
+      <body style={{ backgroundColor: "#f07a18" }}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
           {children}
