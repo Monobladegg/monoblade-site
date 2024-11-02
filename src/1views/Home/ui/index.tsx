@@ -41,7 +41,7 @@ const backendTechnologies = [
     title: "PostgreSQL",
   },
   { src: "/logos/firebase.png", alt: "Firebase", title: "Firebase" },
-  { src: "/logos/docker.png", alt: "Docker", title: "Docker" },
+  { src: "/logos/docker.png", alt: "Docker", title: "Docker" }
 ];
 
 // Grouped technologies
